@@ -5,7 +5,7 @@
   "scripts": {
     "db:migrate": "npx prisma migrate dev --name init --skip-seed && npx prisma db seed",
     "dev": "next dev",
-    "build": "npx prisma migrate dev --name init && npx prisma generate && next build",
+    "build": "npx prisma migrate dev --name init --skip-seed && npx prisma db seed && next build",
     "start": "next start",
     "lint": "next lint"
   },
