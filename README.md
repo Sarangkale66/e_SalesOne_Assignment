@@ -5,11 +5,7 @@
 * All data is stored in a PostgreSQL database, so make sure you have your ***database connection*** string ready from services like [Neon](https://neon.tech), [Supabase](https://supabase.com), or [Aiven](https://aiven.io).
 * Get you email credential from [Mailtrap.io](https://mailtrap.io)
 
-## **SETUP**
-
-There are two methods you can use to set up the application:
-
-### 1. Manual Setup
+## **Manual Setup**
 
 * Install Node packages:
 
@@ -61,13 +57,3 @@ There are two methods you can use to set up the application:
   ```
 
 ---
-
-### 2. Using Docker Compose
-
-* If your system has Docker installed, run the following commands:
-
-  ```
-  docker compose build
-  docker compose run app npm run db:migrate
-  docker compose up
-  ```

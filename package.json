@@ -5,7 +5,8 @@
   "scripts": {
     "db:migrate": "npx prisma migrate dev --name init --skip-seed && npx prisma db seed",
     "dev": "next dev",
-    "build": "npx prisma migrate dev --name init --skip-seed && npx prisma db seed && next build",
+    "app:install":"npm run db:migrat && npm install --legacy-peer-deps",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
