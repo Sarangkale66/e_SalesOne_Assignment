@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "db:migrate": "npx prisma migrate dev --name init --skip-seed && npx prisma db seed",
+    "db:migrate": "npx prisma migrate dev --name init --skip-seed && npx prisma generate && npx prisma db seed",
     "dev": "next dev",
     "app:install":"npm run db:migrate && npm install --legacy-peer-deps",
     "build": "next build",
