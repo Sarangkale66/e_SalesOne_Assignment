@@ -162,7 +162,7 @@ export default function ThankYouPage() {
   let count:number=0;
 
   return (<div className="h-screen overflow-scroll md:overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 relative">
-  <button onClick={()=>{ router.push("/"); }} className="px-5 py-3 bg-sky-600 absolute bottom-0 md:top-0 left-0">Back to Home</button>
+  <button onClick={()=>{ router.push("/"); }} className="px-5 py-3 bg-sky-600 absolute bottom-0 md:top-0 md:left-0 h-fit left-0">Back to Home</button>
   <h1 className="font-extrabold h-[10%] flex justify-center items-center uppercase text-center font-serif text-sm md:text-2xl">🎉 Thank You for Your Purchase‼️ </h1>
   <div className="flex md:flex-row h-full px-10 gap-10">
     <div className="h-[90%] w-full hidden md:block space-y-10 overflow-y-auto px-10 "
