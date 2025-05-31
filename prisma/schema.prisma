@@ -1,0 +1,64 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id          String   @id @default(uuid())
+  fullName    String
+  email       String   @unique
+  phone       String
+  address     String
+  city        String
+  state       String
+  zipCode     String
+
+  cardNumber  String
+  expiryDate  String
+  cvv         String
+
+  createdAt   DateTime @default(now())
+
+  orders      Order[]
+}
+
+
+model Product {
+  id            String   @id @default(uuid())
+  name          String
+  description   String
+  price         Float
+  originalPrice Float
+  image         String
+  color       String[]
+  size        String[]
+  inventory     Int
+  rating        Float
+  reviews       Int
+  category      String
+  isNew         Boolean
+  isBestseller  Boolean
+  createdAt     DateTime @default(now())
+
+  orders        Order[]   // Relation back to orders
+}
+
+model Order {
+  id           String   @id @default(uuid())
+  productId    String
+  product      Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  userId       String
+  user         User     @relation(fields: [userId], references: [id])
+
+  variantColor String
+  variantSize  String
+  quantity     Int
+  subtotal     Float
+  total        Float
+  createdAt    DateTime @default(now())
+}

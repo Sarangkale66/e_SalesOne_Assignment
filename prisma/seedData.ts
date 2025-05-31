@@ -1,0 +1,78 @@
+export const productData  = [
+  {
+    id: "prod_001",
+    name: "Premium Wireless Headphones",
+    description:
+      "Experience crystal-clear audio with our premium wireless headphones featuring active noise cancellation, 30-hour battery life, and premium comfort padding.",
+    price: 299.99,
+    originalPrice: 399.99,
+    image: "/NeonHeadphones.png",
+    variants: {
+      color: ["Midnight Black", "Pearl White", "Ocean Blue", "Crimson Red"],
+      size: ["Small", "Medium", "Large"],
+    },
+    inventory: 50,
+    rating: 4.8,
+    reviews: 1247,
+    category: "Audio",
+    isNew: true,
+    isBestseller: false,
+  },
+  {
+    id: "prod_002",
+    name: "Gaming Mechanical Keyboard",
+    description:
+      "Professional gaming keyboard with RGB backlighting, mechanical switches, and programmable keys for the ultimate gaming experience.",
+    price: 159.99,
+    originalPrice: 199.99,
+    image: "/NeonGamingKeyboard.png",
+    variants: {
+      color: ["Stealth Black", "Arctic White", "RGB Spectrum"],
+      size: ["Compact", "Full-size"],
+    },
+    inventory: 35,
+    rating: 4.6,
+    reviews: 892,
+    category: "Gaming",
+    isNew: false,
+    isBestseller: true,
+  },
+  {
+    id: "prod_003",
+    name: "4K Webcam Pro",
+    description:
+      "Ultra-high definition webcam with auto-focus, noise cancellation microphone, and wide-angle lens perfect for streaming and video calls.",
+    price: 199.99,
+    originalPrice: 249.99,
+    image: "/NeonWebcam.png",
+    variants: {
+      color: ["Matte Black", "Silver White"],
+      size: ["Standard", "Wide-angle"],
+    },
+    inventory: 28,
+    rating: 4.7,
+    reviews: 654,
+    category: "Tech",
+    isNew: true,
+    isBestseller: false,
+  },
+  {
+    id: "prod_004",
+    name: "Wireless Mouse Elite",
+    description:
+      "Ergonomic wireless mouse with precision tracking, customizable buttons, and 60-hour battery life for productivity and gaming.",
+    price: 89.99,
+    originalPrice: 119.99,
+    image: "/NeonMouse.png",
+    variants: {
+      color: ["Carbon Black", "Platinum White", "Space Silver"],
+      size: ["Standard", "Large"],
+    },
+    inventory: 42,
+    rating: 4.5,
+    reviews: 1156,
+    category: "Accessories",
+    isNew: false,
+    isBestseller: true,
+  },
+]
