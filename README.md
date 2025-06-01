@@ -57,3 +57,15 @@
   ```
 
 ---
+
+# If Don't want to use manual setup then 
+
+### 🐳 Using Docker Compose 🥳
+
+Run the following commands one by one to set up and run the application:
+
+```bash
+docker compose build
+docker compose run app npm run db:migrate
+docker compose up
+```
